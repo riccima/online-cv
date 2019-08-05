@@ -1,10 +1,11 @@
+{% assign label = site.data.data.label %}
 {% assign education = site.data.data.education %}
 {% if education %}
   {% if site.data.data.sidebar.education %}
   <div class="education-container container-block">
 
     <h2 class="container-block-title">
-      Education
+      {{ label.education }}
     </h2>
 
     {% for graduation in education %}
@@ -24,7 +25,7 @@
         <i class="fas fa-circle fa-stack-2x"></i>
         <i class="fas fa-graduation-cap fa-stack-1x fa-inverse"></i>
       </span>
-      Education
+      {{ label.eudcation }} 
     </h2>
 
     {% for graduation in education %}
